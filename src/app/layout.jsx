@@ -1,6 +1,8 @@
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export const metadata = {
     title: "God of War",
@@ -13,8 +15,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="pt-BR">
-            <body>
-                {children}
+            <body className="min-h-screen flex flex-col">
+                <Header />
+                <main className="flex-grow">
+                    {children}
+                </main>
+                <Footer />
                 <ToastContainer
                     position="top-right"
                     autoClose={3000}
@@ -25,7 +31,7 @@ export default function RootLayout({ children }) {
                     pauseOnFocusLoss
                     draggable
                     pauseOnHover
-                    theme="light"
+                    theme="dark"
                 />
             </body>
         </html>
