@@ -10,7 +10,19 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname: 'rickandmortyapi.com',
+                hostname: 'god-of-war-api.onrender.com',
+                port: '',
+                pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'static.wikia.nocookie.net',
+                port: '',
+                pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: '*.wikia.nocookie.net',
                 port: '',
                 pathname: '/**',
             }
